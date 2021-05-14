@@ -1,3 +1,14 @@
+:root {
+  --fs-sm: 1.2rem;
+  --fs-med: 1.6rem;
+  --fs-lrg: 2rem;
+  --fs-xlrg: 3.4rem;
+  --fs-xxlrg: 4.8rem;
+
+  --clr-main: cadetblue;
+  --clr-blk: #333;
+  --clr-white: whitesmoke;
+}
 html {
   font-size: 10px;
 }
@@ -13,25 +24,32 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding: 0;
-  color: #333;
-  background-color: cadetblue;
+  color: var(--clr-blk);
+  background-color: var(--clr-main);
+}
+h2 {
+  font-size: var(--fs-xlrg);
+  text-align: center;
+  margin: 0;
 }
 p {
-  font-size: 1.6rem;
+  font-size: var(--fs-med);
+  font-weight: 700;
+  margin: .5rem;
 }
 small {
-  font-size: 1.9rem;
-  font-weight: 700;
+  
+  font-weight: 400;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 1000px;
-  padding: 40px
+  max-width: 82.5rem;
+  padding: 2.5rem;
 }
 
 .title {
-  font-size: 4.4rem;
+  font-size: var(--fs-xxlrg);
   text-align: center;
 }
 
@@ -40,26 +58,26 @@ small {
 }
 
 .label {
-  font-size: 1.2rem;
+  font-size: var(--fs-sm);
   margin-bottom: .2rem;
   text-transform: uppercase;
 }
 
 input {
-    font-size: 1.6rem;
+    font-size: var(--fs-med);
     padding: 0.5rem 2rem;
     line-height: 2.8rem;
-    border-radius: 20px;
-    border: 1px solid #ddd;
+    border-radius: 1.25rem;
+    border: 1px solid var(--clr-white);
     margin-bottom: 1rem;
 }
 
 .button {
     background-color: rgba(0,0,0,0.75);
-    color: white;
+    color: var(--clr-white);
     padding: 1rem 2rem;
     border: 1px solid rgba(0,0,0,0.75);
-    border-radius: 20px;
+    border-radius: 1.25rem;
     font-size: 1.4rem;
     cursor: pointer;
     transition: background-color 250ms;
@@ -74,20 +92,22 @@ input {
     grid-gap: 1rem;
     align-items: center;
   }
-}
-.card-list {
+  .card-list {
   display: grid;
   grid-template-columns: 2fr 2fr;
 }
-.card {
-  border-radius: 10px;
-    box-shadow: 1px 1px 5px rgba(0,0,0,0.25);
-    background-color: whitesmoke;
-    padding: 2rem;
-    
-    margin: 1rem;
 }
 
+.card {
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.25);
+    background-color: var(--clr-white);
+    padding: 2rem;
+    margin: 1rem;
+}
+.card--title {
+  text-decoration: underline var(--clr-main) ;
+}
 .card--image {
   border-radius: 10px;
   display: block;
@@ -95,12 +115,10 @@ input {
   object-fit: cover;
 }
 
-h2 {
-  font-size: 3.2rem;
-  text-align: center;
-  margin: 0;
-}
+
 .extra {
   display: flex;
   justify-content: space-between;
+  border-top: 2px var(--clr-main) solid;
+  margin-top: 2rem;
 }

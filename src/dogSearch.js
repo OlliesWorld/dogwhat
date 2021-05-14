@@ -49,13 +49,15 @@ export default function SearchDogs() {
                         <div div className="card--content" >
                             <h2 className="card--title">{dog.name}</h2>
                             <p>Breed Group: <small>{dog.breed_group ? dog.breed_group : "no group assigned"}</small></p>
-                            <p>Temperament: <small>{dog.temperament ? dog.temperament : "temperament unkown"}</small></p>
-                            <p className="card--desc">Bred for:<small> {dog.bred_for ? dog.bred_for : "no official breed"}</small> </p>
-                            <p><small>Life Span: </small>{dog.life_span}</p>
+                            <p>Temperament:</p><p> <small>{dog.temperament ? dog.temperament : "temperament unkown"}</small></p>
+                            <p className="card--desc">Bred for:</p><p> <small> {dog.bred_for ? dog.bred_for : "no official breed"}</small> </p>
+
                             <div className="extra">
-                                <p><small>weight: </small>{dog.weight.imperial}</p>
-                                <p><small>height: </small>{dog.height.imperial}</p>
+                                <p><small>Weight: </small>{dog.weight.imperial}lbs.</p>
+                                <p><small>Height: </small>{dog.height.imperial}inches</p>
+
                             </div>
+                            <p><small>Life Span: </small>{dog.life_span}</p>
                         </div>
 
                     </div>
