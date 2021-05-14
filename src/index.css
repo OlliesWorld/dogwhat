@@ -1,0 +1,106 @@
+html {
+  font-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont,  'Oxygen',
+   
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  color: #333;
+  background-color: cadetblue;
+}
+p {
+  font-size: 1.6rem;
+}
+small {
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 40px
+}
+
+.title {
+  font-size: 4.4rem;
+  text-align: center;
+}
+
+.form {
+  display: grid;
+}
+
+.label {
+  font-size: 1.2rem;
+  margin-bottom: .2rem;
+  text-transform: uppercase;
+}
+
+input {
+    font-size: 1.6rem;
+    padding: 0.5rem 2rem;
+    line-height: 2.8rem;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
+}
+
+.button {
+    background-color: rgba(0,0,0,0.75);
+    color: white;
+    padding: 1rem 2rem;
+    border: 1px solid rgba(0,0,0,0.75);
+    border-radius: 20px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: background-color 250ms;
+}
+.button:hover {
+  background-color: rgba(0,0,0,0.85);
+}
+
+@media (min-width: 45em) {
+  .form{
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 1rem;
+    align-items: center;
+  }
+}
+.card-list {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+.card {
+  border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.25);
+    background-color: whitesmoke;
+    padding: 2rem;
+    
+    margin: 1rem;
+}
+
+.card--image {
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+h2 {
+  font-size: 3.2rem;
+  text-align: center;
+  margin: 0;
+}
+.extra {
+  display: flex;
+  justify-content: space-between;
+}
